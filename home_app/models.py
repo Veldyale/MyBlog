@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Home(models.Model):
+    home_image = models.ImageField(upload_to='home_images/')
+    home_text = models.CharField(max_length=300)
+
